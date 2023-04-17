@@ -1,0 +1,481 @@
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: pink;
+    box-shadow: 0 5px 4px white;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px ;
+}
+#navbar li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+#navbar li a:hover{
+    color: gray;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+#hero{
+    background-image: url("img/bg.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 999;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero button{
+    background-image: url("img/blur.jpg");
+    background-color: transparent;
+    color: aqua;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* shop */
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    
+}
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid pink;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/*game*/
+
+#product2{
+    text-align: center;
+}
+
+#product2 .pro-container2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#product2 .pro2{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid pink;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product2 .pro2:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product2 .pro2 img{
+    width: 90%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+#product2 .pro2 .des2{
+    text-align: center;
+    padding: 10px 0;
+}
+
+#product2 .pro2 .des2 span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product2 .pro2 .des2 h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+#product2 .pro2 .des2 i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product2 .pro2 .des2  h2{
+    padding-top: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #088178;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* navbar ultra */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    
+    .number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    }
+    
+    .number-input input[type=number]::-webkit-inner-spin-button,
+    .number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    }
+    
+    .number-input button {
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    }
+    
+    .number-input button:before,
+    .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+    }
+    
+    .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    .number-input input[type=number] {
+    text-align: center;
+    }
+    
+    .number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+    }
+    
+    .number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+    }
+    
+    .number-input.number-input button.minus {
+    padding-left: 10px;
+    }
+    
+    .number-input.number-input button:before,
+    .number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+    }
+    
+    .number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+    }
+    
+    @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+    
+    .number-input.def-number-input.safari_only button:before,
+    .number-input.def-number-input.safari_only button:after {
+    margin-top: -.3rem;
+    }
+    }
+    }
+    
+    .shopping-cart .def-number-input.number-input {
+    border: none;
+    }
+    
+    .shopping-cart .def-number-input.number-input input[type=number] {
+    max-width: 2rem;
+    border: none;
+    }
+    
+    .shopping-cart .def-number-input.number-input input[type=number].black-text,
+    .shopping-cart .def-number-input.number-input input.btn.btn-link[type=number],
+    .shopping-cart .def-number-input.number-input input.md-toast-close-button[type=number]:hover,
+    .shopping-cart .def-number-input.number-input input.md-toast-close-button[type=number]:focus {
+    color: #212529 !important;
+    }
+    
+    .shopping-cart .def-number-input.number-input button {
+    width: 1rem;
+    }
+    
+    .shopping-cart .def-number-input.number-input button:before,
+    .shopping-cart .def-number-input.number-input button:after {
+    width: .5rem;
+    }
+    
+    .shopping-cart .def-number-input.number-input button.minus:before,
+    .shopping-cart .def-number-input.number-input button.minus:after {
+    background-color: #9e9e9e;
+    }
+    
+    .shopping-cart .def-number-input.number-input button.plus:before,
+    .shopping-cart .def-number-input.number-input button.plus:after {
+    background-color: #4285f4;
+    }
+
+    /*footer*/
+
+    
