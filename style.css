@@ -96,6 +96,18 @@ nav.fill ul li a:hover:after {
 
 #hero h4{
     padding-bottom: 15px;
+    color:blue ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#hero h2{
+    color: yellow;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#hero h1{
+    color: peachpuff;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #hero button{
