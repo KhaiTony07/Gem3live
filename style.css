@@ -81,7 +81,7 @@ nav.fill ul li a:hover:after {
   opacity: 1;
 }
 #hero{
-    background-image: url("img/bg.png");
+    background-image: url("img/bg1.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
